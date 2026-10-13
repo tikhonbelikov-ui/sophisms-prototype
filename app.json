@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Мания заблуждений",
+    "slug": "sophisms-prototype",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.sophisms.prototype"
+    }
+  }
+}
