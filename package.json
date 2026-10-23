@@ -1,7 +1,8 @@
 {
   "name": "sophismsprototype",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
+  "private": true,
   "dependencies": {
     "expo": "~57.0.25",
     "expo-status-bar": "~57.0.1",
@@ -12,7 +13,7 @@
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
-  },
-  "private": true
+    "web": "expo start --web",
+    "test:logic": "node --test tests/game.test.js"
+  }
 }
