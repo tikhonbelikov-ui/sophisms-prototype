@@ -1,0 +1,636 @@
+{
+  "lessons": 63,
+  "quizzes": 991,
+  "files": [
+    {
+      "file": "Апелляция_к_авторитету.txt",
+      "id": "SOF-005",
+      "sourceBytes": 34352,
+      "sha256": "146105a0df1b1a9f0662d14152667ab5627db52739ab401f3f9366e7c16243a1",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 35658
+    },
+    {
+      "file": "Апелляция_к_бедности.txt",
+      "id": "SOF-046",
+      "sourceBytes": 21890,
+      "sha256": "249de1722159c0aa1ba21501a367e0b613fb27ea7b4b5bc1da4353a982ace632",
+      "quizzes": 19,
+      "sourceFourOptionQuestions": 19,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 23393
+    },
+    {
+      "file": "Апелляция_к_богатству.txt",
+      "id": "SOF-042",
+      "sourceBytes": 24786,
+      "sha256": "4a03afc0716019f941693bdf96a3024422797df10fc8e0a3ea7bdba24fc361d2",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 15,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 24875
+    },
+    {
+      "file": "Апелляция_к_большинству.txt",
+      "id": "SOF-004",
+      "sourceBytes": 23033,
+      "sha256": "fc9c8f61a5db1f76a44518b2116d4f8ce646b19b2b55c453e13f1245c8f20b9e",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 24855
+    },
+    {
+      "file": "Апелляция_к_высмеиванию.txt",
+      "id": "SOF-047",
+      "sourceBytes": 43297,
+      "sha256": "0af55d531b77d68c4400ff881456953961d2016df93674a47a95b3afb8dff83b",
+      "quizzes": 27,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 46747
+    },
+    {
+      "file": "Апелляция_к_жалости.txt",
+      "id": "SOF-010",
+      "sourceBytes": 26908,
+      "sha256": "4fe87a2d5894d38140a44050b9fec4da1aef15038947eee9f9da53755c4376c7",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 28728
+    },
+    {
+      "file": "Апелляция_к_последствиям.txt",
+      "id": "SOF-034",
+      "sourceBytes": 22639,
+      "sha256": "76e66dc611b4579002c1aeb5f9a2e4fa31b1de2a1e3ca1a0e80f9168d0b74bb3",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 15,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 23704
+    },
+    {
+      "file": "Апелляция_к_природе.txt",
+      "id": "SOF-008",
+      "sourceBytes": 26654,
+      "sha256": "e5ee4a9c9bbb856b5be7b839306e4ce120cf470572119916b53d923197ecc91c",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 15,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 27486
+    },
+    {
+      "file": "Апелляция_к_новизне.txt",
+      "id": "SOF-007",
+      "sourceBytes": 22015,
+      "sha256": "26215b16b37e2f0e92ea7a339f5ecb3f9ca63570ec2b0d093ab056bf225f8251",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 15,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 23349
+    },
+    {
+      "file": "Апелляция_к_силе.txt",
+      "id": "SOF-048",
+      "sourceBytes": 22440,
+      "sha256": "c78efc2705b7fe298f2d3997c8f61afdd86109b6a95b994c6d8424929b9a20d2",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 24241
+    },
+    {
+      "file": "Апелляция_к_сложности.txt",
+      "id": "SOF-049",
+      "sourceBytes": 33102,
+      "sha256": "122306bf59229bed613960cccb83fb4ed4e6b0d4f67aeb9ac86939d4c513b194",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 34369
+    },
+    {
+      "file": "Апелляция_к_социальной_неуспешности.txt",
+      "id": "SOF-050",
+      "sourceBytes": 26885,
+      "sha256": "85cf3bd15475e51177ef0ae2a48a0595fdc2fa0b4cac874ecf5d1342575fb417",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 15,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 27278
+    },
+    {
+      "file": "Апелляция_к_традиции.txt",
+      "id": "SOF-006",
+      "sourceBytes": 27516,
+      "sha256": "f1271fe14bf734b31565498e1bd9c748f723562cd910730c610c078979a847ba",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29038
+    },
+    {
+      "file": "Апелляция_к_эмоциям.txt",
+      "id": "SOF-051",
+      "sourceBytes": 27232,
+      "sha256": "4a79d70f4015883623ab328e2d72b11c8bec8f1dece0b6104e9b3f01df99db97",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 28790
+    },
+    {
+      "file": "Апелляция_к_незнанию.txt",
+      "id": "SOF-011",
+      "sourceBytes": 27555,
+      "sha256": "6e979cfb2c3e20830d3fbcd960737f2c3bf79e070e9e2a200118726daaab9f3c",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29338
+    },
+    {
+      "file": "Перекладывание_бремени_доказательства.txt",
+      "id": "SOF-018",
+      "sourceBytes": 27155,
+      "sha256": "6af798a90156158cd2e9904e31bb9817ea0eba397ea9e1ed1749aed2dee06d7e",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29036
+    },
+    {
+      "file": "Соломенное_чучело.txt",
+      "id": "SOF-003",
+      "sourceBytes": 23190,
+      "sha256": "9cbe6bad1f121b3a16aadf0685af269186e304fb56ace94a2a495a55b09cfb7a",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 24819
+    },
+    {
+      "file": "Переход_на_личности.txt",
+      "id": "SOF-002",
+      "sourceBytes": 21510,
+      "sha256": "89bd6f6d02644c12ec1d338ace64c2df8eef43ae7762151a9499ac356b9c86ce",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 23152
+    },
+    {
+      "file": "Отвлекающий_манёвр.txt",
+      "id": "SOF-019",
+      "sourceBytes": 32084,
+      "sha256": "850e289ab187ba682d9ab171eb5b41697756368496eed10e8903afe3f198ca16",
+      "quizzes": 19,
+      "sourceFourOptionQuestions": 19,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 32418
+    },
+    {
+      "file": "Отравление_колодца.txt",
+      "id": "SOF-052",
+      "sourceBytes": 27772,
+      "sha256": "ff7317e6f5f190c18df392192f334b0373a3ce38416eda1357de1d202657b463",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29494
+    },
+    {
+      "file": "Круговая_аргументация.txt",
+      "id": "SOF-017",
+      "sourceBytes": 23768,
+      "sha256": "5741e970409b15ce15d8d36492ed5ecbae51ebd93fa322aec6db563170bb39fc",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 25475
+    },
+    {
+      "file": "Генетическая_ошибка.txt",
+      "id": "SOF-030",
+      "sourceBytes": 26879,
+      "sha256": "cd8d620a5f9f773ae2f400624c325c7ec73b0d279dded936e078edb9e3644494",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 28747
+    },
+    {
+      "file": "А_сам_такой.txt",
+      "id": "SOF-031",
+      "sourceBytes": 24636,
+      "sha256": "df0ae859aa749573b21d0281d17eb3cc2e524dab2cff19f0481ce40674376dd7",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 15,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 25907
+    },
+    {
+      "file": "Ложная_аналогия.txt",
+      "id": "SOF-016",
+      "sourceBytes": 23424,
+      "sha256": "b7af010c4ece39a791d2b727ff843bf48d033218e66abab6968171f15ed71139",
+      "quizzes": 16,
+      "sourceFourOptionQuestions": 16,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 24602
+    },
+    {
+      "file": "Корреляция_не_равна_причинности.txt",
+      "id": "SOF-053",
+      "sourceBytes": 26961,
+      "sha256": "7956a2c632753727eb080538924e445b721a7b8d0b95dd1d2d882d1d771fd4e7",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 28677
+    },
+    {
+      "file": "После_этого_значит_по_причине_этого.txt",
+      "id": "SOF-012",
+      "sourceBytes": 22327,
+      "sha256": "3b6813ac84a41a2e10abe03f6aa323ce99cfe803d2646ed357059c427a8b7ebd",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 24177
+    },
+    {
+      "file": "Ошибка_единственной_причины.txt",
+      "id": "SOF-054",
+      "sourceBytes": 28506,
+      "sha256": "4a64da998cf2bbb2e5678b34441dfe474426c5d2cfb8a27d34b3e0f220833beb",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 30116
+    },
+    {
+      "file": "Ошибка_игрока.txt",
+      "id": "SOF-036",
+      "sourceBytes": 27470,
+      "sha256": "285beb03a947d5f2fa244c736b5aa45512cc6df5b7b754af0633f76cd837d9b1",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29467
+    },
+    {
+      "file": "Иллюзорная_корреляция.txt",
+      "id": "SOF-055",
+      "sourceBytes": 26333,
+      "sha256": "9e7b0af1c58c0a21a3acb4ce7a0f5edaedfff354dd48af7eea9e07ee732add2b",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 27928
+    },
+    {
+      "file": "Ошибка_выжившего.txt",
+      "id": "SOF-035",
+      "sourceBytes": 27152,
+      "sha256": "07d12d5928ebc9be045c6f7923463ac599f02fcb1b0c8cb12d2c07ba317444ad",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29056
+    },
+    {
+      "file": "Ошибка_невозвратных_затрат.txt",
+      "id": "SOF-056",
+      "sourceBytes": 42060,
+      "sha256": "197a24b79a8459fc86c76bb12926b05e85ec63f8f6fee4970cef8e8cc4a1486b",
+      "quizzes": 26,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 44955
+    },
+    {
+      "file": "Ошибка_композиции.txt",
+      "id": "SOF-028",
+      "sourceBytes": 27728,
+      "sha256": "40203ab34177809116ee32f977852bd4e66d942196f945046e8e4f9f19d25bee",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29370
+    },
+    {
+      "file": "Ошибка_деления.txt",
+      "id": "SOF-029",
+      "sourceBytes": 29908,
+      "sha256": "6961b9d3dca82963168a104cabef73a4e3413db780568d5bd5bd217b10209464",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 31436
+    },
+    {
+      "file": "Категориальная_ошибка.txt",
+      "id": "SOF-057",
+      "sourceBytes": 27615,
+      "sha256": "d070b5f32565a8c746fd740e9840b4e065f904d8145543da74dd8984b166246b",
+      "quizzes": 16,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29446
+    },
+    {
+      "file": "Ложная_дилемма.txt",
+      "id": "SOF-001",
+      "sourceBytes": 20517,
+      "sha256": "d6ca6f9c864b315d784bbbce804bfb859a9db540cc19af0e5383c273ce3c2472",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 22283
+    },
+    {
+      "file": "Ошибка_нирваны.txt",
+      "id": "SOF-039",
+      "sourceBytes": 26893,
+      "sha256": "444f8ba85be0713fdc4c731196fa25ba4ae18e6af00d3a2551748fe603258db1",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 28736
+    },
+    {
+      "file": "Скользкий_путь.txt",
+      "id": "SOF-015",
+      "sourceBytes": 27290,
+      "sha256": "b80d653a72a117a399f156b18b792b3a59dd8a3db3772cb957061a6c7afc0d71",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 28935
+    },
+    {
+      "file": "Специальные_требования.txt",
+      "id": "SOF-033",
+      "sourceBytes": 24715,
+      "sha256": "bfe2e041d437c82484e5da536159c75964e34f0be087cc2202877cbfbbbe3498",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 26498
+    },
+    {
+      "file": "Аргумент_от_анекдота.txt",
+      "id": "SOF-058",
+      "sourceBytes": 27451,
+      "sha256": "fda84996878f199c2257e21c091cfa52d17ec25ba03a559d7b467a8d5c82e8f4",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 15,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29461
+    },
+    {
+      "file": "Эффект_якоря.txt",
+      "id": "SOF-059",
+      "sourceBytes": 26864,
+      "sha256": "6469f1bb102c29ad34635de7d9fa1fcb9295a69a9ff90f5bf67e9ec6d0634bee",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 28793
+    },
+    {
+      "file": "Эффект_первенства.txt",
+      "id": "SOF-060",
+      "sourceBytes": 25600,
+      "sha256": "ed0339350c110e8d7b6d3d6a10f89748cb23e7a99f6a53c5008cd4172494a183",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 26996
+    },
+    {
+      "file": "Эффект_недавности.txt",
+      "id": "SOF-061",
+      "sourceBytes": 26395,
+      "sha256": "fa769e8e1a79b02d13fdd785968faad2015520fbce61c8318ce6f426a9569920",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 27909
+    },
+    {
+      "file": "Эффект_простого_предъявления.txt",
+      "id": "SOF-062",
+      "sourceBytes": 26589,
+      "sha256": "e568b0c5be2d5e7da5f5c150b8e94750df5a46ec6647c5990f3a50f42139a2e2",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 27977
+    },
+    {
+      "file": "Фрейминг_эффект.txt",
+      "id": "SOF-063",
+      "sourceBytes": 27761,
+      "sha256": "91e27975de4a7677018e645ff9ecf0f3a2cc2339b7a217fc5f96cccfd6d7645e",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29441
+    },
+    {
+      "file": "Эвристика_доступности.txt",
+      "id": "SOF-064",
+      "sourceBytes": 29392,
+      "sha256": "176f85837ce5ab2d0740f41016549d25e3571e18aa2f766efe5e838f87d07066",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 30606
+    },
+    {
+      "file": "Эвристика_репрезентативности.txt",
+      "id": "SOF-065",
+      "sourceBytes": 30336,
+      "sha256": "18cd36615ce01f52ca90d3f7a8c1862feaa8e466a72e564756364c07d6d69878",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 31858
+    },
+    {
+      "file": "Фундаментальная_ошибка_атрибуции.txt",
+      "id": "SOF-066",
+      "sourceBytes": 28619,
+      "sha256": "7da7451024fbfd93ec24377b584eca53b5c52ea94dc77f7431da1c8b36de1ef1",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 30467
+    },
+    {
+      "file": "Предвзятость_самообслуживания.txt",
+      "id": "SOF-067",
+      "sourceBytes": 27667,
+      "sha256": "65b6628896b4829c7fb26415c2f9e8981975cdb4ccbe22b1c5c9805413d09792",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29611
+    },
+    {
+      "file": "Ошибка_злого_умысла.txt",
+      "id": "SOF-068",
+      "sourceBytes": 25608,
+      "sha256": "8c7ca71e87d6a4e15bd8adedab3df507c266b3d75241201268aadf177097d5bc",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 26775
+    },
+    {
+      "file": "Наивный_реализм.txt",
+      "id": "SOF-069",
+      "sourceBytes": 28134,
+      "sha256": "f04f7f0ac381fbf6bef67a04c063e2ebfc81447c34d6f22a2e6b2fa9a9eb664d",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29667
+    },
+    {
+      "file": "Слепое_пятно_предвзятости.txt",
+      "id": "SOF-070",
+      "sourceBytes": 28528,
+      "sha256": "36b4a2ce215a83a3ddda1604ad3dcb98579325cc9daa80d9bcd283943de45306",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 30193
+    },
+    {
+      "file": "Иллюзия_контроля.txt",
+      "id": "SOF-071",
+      "sourceBytes": 27339,
+      "sha256": "96c04c02b593a8f57d4f8345c2f9354ddb11fc9c18b2325627b25aa23b0b2018",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 28965
+    },
+    {
+      "file": "Иллюзия_справедливого_мира.txt",
+      "id": "SOF-072",
+      "sourceBytes": 26211,
+      "sha256": "bb0b5ed720920c2ae6edc844ad094d460f8175872c22ed9f25ee108495c024c2",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 27728
+    },
+    {
+      "file": "Предвзятость_статус_кво.txt",
+      "id": "SOF-073",
+      "sourceBytes": 24829,
+      "sha256": "99d06bd172676c447f923a6dda7b52b4c7b32d3f9c1f3998eb64ca3ac9e35853",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 26135
+    },
+    {
+      "file": "Ошибка_планирования.txt",
+      "id": "SOF-074",
+      "sourceBytes": 27550,
+      "sha256": "209f422400b07503cf07b14c46f2ae08f43372a338fb77badaeda1d48c0b73f2",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29427
+    },
+    {
+      "file": "Склонность_к_подтверждению.txt",
+      "id": "SOF-075",
+      "sourceBytes": 30844,
+      "sha256": "f602b8f0bf1af73904952457a7928885ad643efa2aab2434d2f47f0cc16ee0a7",
+      "quizzes": 22,
+      "sourceFourOptionQuestions": 22,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 32309
+    },
+    {
+      "file": "Эффект_Барнума.txt",
+      "id": "SOF-076",
+      "sourceBytes": 29267,
+      "sha256": "6be356b3c3c0389191c9c481946fd46b4de280f31940c30391b1514ae3503355",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 30877
+    },
+    {
+      "file": "Эффект_ложного_консенсуса.txt",
+      "id": "SOF-077",
+      "sourceBytes": 25328,
+      "sha256": "d1d6315ee84b01f62271fc5de495a6ca8ff80e699503f5c8ba0e0dc75dac91a4",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 27026
+    },
+    {
+      "file": "Иллюзия_прозрачности.txt",
+      "id": "SOF-078",
+      "sourceBytes": 29332,
+      "sha256": "a919aca1fd4e3ffa9b4cb68e30182f7080511abe4906f54f780569b5bcfd92d3",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 30977
+    },
+    {
+      "file": "Эффект_ореола.txt",
+      "id": "SOF-079",
+      "sourceBytes": 41006,
+      "sha256": "bc47257c23f3afa272f7c9ebb8c18331775f481a12816bfa05716defc14f3887",
+      "quizzes": 21,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 1,
+      "articleBytes": 42515
+    },
+    {
+      "file": "Эффект_Даннинга_Крюгера.txt",
+      "id": "SOF-080",
+      "sourceBytes": 27595,
+      "sha256": "3493b813c9f3fe5c9683e659ef2c01a06e82de2b7eeda05ee8290d171f663f75",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29458
+    },
+    {
+      "file": "Псевдоглубина.txt",
+      "id": "SOF-081",
+      "sourceBytes": 27522,
+      "sha256": "5dbb79ca25b703f6585b54afe014461d2bdd47126bc06583e81e236e37b77903",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 29383
+    },
+    {
+      "file": "Ошибка_меткого_стрелка.txt",
+      "id": "SOF-038",
+      "sourceBytes": 29587,
+      "sha256": "b235246db8205aebe0b79af7ab0cb57e0f89e9ab7bb7f1f2c7d23d64a0e4a043",
+      "quizzes": 15,
+      "sourceFourOptionQuestions": 0,
+      "emptyQuizMarkers": 0,
+      "articleBytes": 31404
+    }
+  ]
+}

@@ -2,13 +2,15 @@
   "expo": {
     "name": "Мания заблуждений",
     "slug": "sophisms-prototype",
-    "version": "0.2.0",
+    "version": "2.4.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "android": {
       "package": "com.sophisms.prototype",
-      "versionCode": 2,
-      "adaptiveIcon": { "backgroundColor": "#274E93" }
+      "versionCode": 7,
+      "adaptiveIcon": {
+        "backgroundColor": "#EDF5FB"
+      }
     }
   }
 }

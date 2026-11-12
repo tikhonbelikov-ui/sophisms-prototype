@@ -1,19 +1,29 @@
 {
-  "name": "sophismsprototype",
-  "version": "1.1.0",
+  "name": "sophisms",
+  "version": "2.4.0",
   "main": "index.js",
   "private": true,
   "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
     "expo": "~57.0.25",
     "expo-status-bar": "~57.0.1",
+    "expo-system-ui": "~57.0.4",
     "react": "19.2.3",
-    "react-native": "0.86.3"
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0"
   },
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "test:logic": "node --test tests/game.test.js"
+    "test:logic": "node --test tests/*.test.js",
+    "check:syntax": "node scripts/check-syntax.js"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3"
+  },
+  "engines": {
+    "node": ">=22.13.0"
   }
 }

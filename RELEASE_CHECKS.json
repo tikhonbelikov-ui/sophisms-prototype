@@ -1,0 +1,16 @@
+{
+  "version": "2.4.0",
+  "androidVersionCode": 7,
+  "testsPassed": 37,
+  "originalLessons": 63,
+  "quizQuestions": 991,
+  "answerChoicesPerQuestion": 3,
+  "sourceBytes": 1731551,
+  "articleJsonBytes": 1832537,
+  "jsSyntaxCheck": "passed using TypeScript transpileModule",
+  "androidHermesExport": "not run for 2.4 (previous 2.3 release passed)",
+  "browserFlowTests": "not rerun for 2.4; previous 2.3 version tested",
+  "nativeGradleBuild": "not run: Android SDK unavailable",
+  "androidDeviceTest": "not run",
+  "signing": "requires existing user keystore"
+}
