@@ -15,12 +15,29 @@ const START={players:DEFAULT_PLAYERS,packId:'basic25',selectedIds:PACKS[0].ids,e
 const isRead=name=>['read','article','tests'].includes(name);
 const format=(n)=>String(n).padStart(2,'0');
 
-function Nav({onPlay,onRead,onTests,onRules,active}){const theme=['read','tests'].includes(active)?'read':'game';const p=colors[theme];return <View style={{flexDirection:'row',gap:S.sm,padding:S.md,backgroundColor:p.surface,borderTopColor:p.line,borderTopWidth:1}}>
-  <Action title="Играть" theme={theme} small tone={active==='play'?'primary':'outline'} onPress={onPlay} style={{flex:1,paddingHorizontal:4}}/>
-  <Action title="Правила" theme={theme} small tone={active==='rules'?'primary':'outline'} onPress={onRules} style={{flex:1,paddingHorizontal:4}}/>
-  <Action title="Читать" theme={theme} small tone={active==='read'?'primary':'outline'} onPress={onRead} style={{flex:1,paddingHorizontal:4}}/>
-  <Action title="Тесты" theme={theme} small tone={active==='tests'?'primary':'outline'} onPress={onTests} style={{flex:1,paddingHorizontal:4}}/>
- </View>}
+// Вкладки меняют раздел. Запуск и продолжение партии остаются действием главного экрана.
+function NavIcon({name,color}){
+ const stroke={borderColor:color,borderWidth:2};
+ return <View importantForAccessibility="no-hide-descendants" accessibilityElementsHidden style={{width:24,height:24,justifyContent:'center',alignItems:'center'}}>
+  {name==='home'?<View style={[stroke,{width:22,height:22,borderRadius:6,padding:4,flexDirection:'row',flexWrap:'wrap',gap:4}]}>{[0,1,2,3].map(n=><View key={n} style={{width:3,height:3,borderRadius:2,backgroundColor:color}}/>)}</View>
+   :name==='read'?<View style={{flexDirection:'row'}}>{[0,1].map(n=><View key={n} style={[stroke,{width:11,height:19,borderTopLeftRadius:4,borderTopRightRadius:4}]}/>)}</View>
+   :name==='tests'?<View style={[stroke,{width:20,height:22,borderRadius:4,alignItems:'center',justifyContent:'center'}]}><View style={{width:11,height:6,borderLeftWidth:2,borderBottomWidth:2,borderColor:color,transform:[{rotate:'-45deg'}],marginBottom:3}}/></View>
+   :<View style={[stroke,{width:20,height:22,borderRadius:4,justifyContent:'center',paddingHorizontal:3,gap:3}]}>{[0,1,2].map(n=><View key={n} style={{height:2,backgroundColor:color}}/>)}</View>}
+ </View>;
+}
+function Nav({onHome,onRead,onTests,onRules,active}){
+ const theme=['read','tests'].includes(active)?'read':'game';const p=colors[theme];
+ const tabs=[['home','Игра',onHome],['read','Софизмы',onRead],['tests','Тесты',onTests],['rules','Правила',onRules]];
+ return <View accessibilityRole="tablist" style={{flexDirection:'row',paddingHorizontal:S.sm,paddingVertical:S.sm,backgroundColor:p.surface,borderTopColor:p.line,borderTopWidth:1}}>
+  {tabs.map(([id,label,onPress])=>{
+   const selected=active===id;const ink=selected?p.accent:p.muted;
+   return <Pressable key={id} accessibilityRole="tab" accessibilityLabel={label} accessibilityState={{selected}} onPress={onPress} style={({pressed})=>({flex:1,minWidth:0,minHeight:64,paddingVertical:S.xs,alignItems:'center',justifyContent:'center',gap:S.xs,opacity:pressed?.65:1})}>
+    <View style={{width:56,height:32,borderRadius:16,backgroundColor:selected?p.accentSoft:'transparent',alignItems:'center',justifyContent:'center'}}><NavIcon name={id} color={ink}/></View>
+    <Text style={{color:ink,fontSize:13,fontWeight:selected?'800':'500',textAlign:'center',paddingHorizontal:2}}>{label}</Text>
+   </Pressable>;
+  })}
+ </View>;
+}
 const blockPadding={padding:S.base,paddingBottom:S.xl,gap:S.md};
 function AppInner(){
  const {height,fontScale}=useWindowDimensions();
@@ -168,7 +185,7 @@ function AppInner(){
      <Txt variant="hero" style={{textAlign:'center',fontSize:51,lineHeight:56,color:colors.game.accent}}>∴</Txt>
    </View>
    <View style={{gap:S.sm,alignItems:'center'}}><Txt variant="label" style={{letterSpacing:3}}>ИГРА В КРИТИЧЕСКОЕ МЫШЛЕНИЕ</Txt><Txt variant="hero" style={{textAlign:'center'}}>Мания{`\n`}заблуждений</Txt><Txt variant="body" style={{textAlign:'center',color:colors.game.muted}}>Учитесь замечать софизмы и находить их в живом споре</Txt></View>
-   <View style={{gap:S.md,marginTop:S.md}}><Action title={game&&!isGameOver(game)?'Продолжить партию':'Новая игра'} onPress={play}/><Action title="Библиотека софизмов" tone="soft" onPress={()=>setScreen('read')}/><Action title="Правила и подсчёт очков" tone="outline" onPress={()=>setScreen('rules')}/></View>
+   <View style={{gap:S.md,marginTop:S.md}}><Action title={game&&!isGameOver(game)?'Продолжить партию':'Новая игра'} onPress={play}/></View>
    {game&&!isGameOver(game)&&<Panel tinted><Txt variant="caption">Сохранённая партия · {game.players.length} игрока(ов) · {formatSeconds(remaining)} · банк {game.bankLeft}/{game.errorBank}</Txt></Panel>}
   </View>;
  } else if(screen==='setup'){
@@ -245,7 +262,8 @@ function AppInner(){
    <Panel><Txt variant="subtitle">3. Очки и банк ошибок</Txt><Txt>Правильная догадка даёт +1 очко. При неправильной попытке сначала расходуется общий банк ошибок (20 по умолчанию). Когда он пуст, каждое неправильное угадывание приносит −1 очко соответствующему отгадчику. Баллы могут стать отрицательными.</Txt></Panel>
    <Panel><Txt variant="subtitle">4. Новые карты</Txt><Txt>Правильно угаданный софизм уходит в сброс; спорщик видит новый. Спорщик может сам заменить слишком сложную карту. После исчерпания колоды сброшенные карты снова доступны.</Txt></Panel>
    <Panel><Txt variant="subtitle">5. Завершение</Txt><Txt>Общий таймер по умолчанию составляет 20 минут. Его можно поставить на паузу, а партию — завершить досрочно. Итоги и история действий сохраняются локально.</Txt></Panel>
-  </View>;footer=<Action title="Начать игру" onPress={newGame}/>;
+   <Action title={game&&!isGameOver(game)?'Продолжить партию':'Играть'} onPress={play}/>
+  </View>;
  } else if(screen==='read'){
   title='Библиотека софизмов';body=<View style={baseText}>
    <View style={{paddingVertical:S.sm,gap:S.sm}}><Txt theme="read" variant="label">АРХИВ КРИТИЧЕСКОГО МЫШЛЕНИЯ</Txt><Txt theme="read" variant="title" style={{fontSize:30}}>Библиотека софизмов</Txt><Txt theme="read" variant="caption">{CARDS.length} статей · расширенные разборы и краткие карточки</Txt></View>
@@ -272,7 +290,7 @@ function AppInner(){
    <StatusBar backgroundColor={p.bg} barStyle="dark-content"/>
    {header}{content}
    {footer&&!scrollFooter&&<View style={{padding:S.md,borderTopWidth:1,borderColor:p.line,backgroundColor:p.bg}}>{footer}</View>}
-   {(['home','rules','read'].includes(screen)||(screen==='tests'&&['catalog','history'].includes(testsStage)))&&<Nav active={screen==='home'?'play':screen} onPlay={play} onRead={()=>setScreen('read')} onTests={()=>openTests()} onRules={()=>setScreen('rules')}/>}
+   {(['home','rules','read','article'].includes(screen)||(screen==='tests'&&['catalog','history'].includes(testsStage)))&&<Nav active={screen==='article'?'read':screen} onHome={navigateHome} onRead={()=>setScreen('read')} onTests={()=>openTests()} onRules={()=>setScreen('rules')}/>}
    {savingError&&<View style={{position:'absolute',top:0,left:0,right:0,backgroundColor:'#FFF0E0',padding:S.sm}}><Txt variant="caption">Не удалось сохранить данные. Проверьте свободное место.</Txt></View>}
    {overlay?.type==='guess'?<Overlay entry={{title:'Проверка догадки',description:`Софизм: ${getCard(selectedCard)?.name||''}`,cancel:'Отмена',confirm:'Проверить',onConfirm:doGuess,confirmDisabled:!canCheckGuess,
      extra:<View style={{gap:S.md}}>
